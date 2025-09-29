@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Coffee Shop</title>
+<style>
+  body {
+    margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #6B4C3B;
+    color: #3c2f26;
+  }
+  header, .why-choose, .happy-hours, footer {
+    background: #F5E8DC; padding: 20px; text-align:center;
+  }
+  nav a {
+    margin: 0 10px; text-decoration:none; color:#3c2f26; font-weight:600;
+  }
+  .hero {
+    background: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover no-repeat;
+    color: white; padding: 60px 20px; text-align:left; max-width: 1000px; margin: auto;
+  }
+  .hero button {
+    background: #bc9265; border:none; padding:12px 20px; border-radius:20px; color:#fff; cursor:pointer;
+  }
+  h1 { font-size: 2.5rem; margin-bottom: 10px;}
+  .cards {
+    display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; max-width: 1000px; margin: 20px auto;
+  }
+  .card {
+    background: #fff; border-radius: 10px; box-shadow: 0 0 8px #bfa36e;
+    width: 200px; padding: 10px; color: #3c2f26;
+    text-align: center;
+  }
+  .card img {
+    width: 100%; border-radius: 10px;
+  }
+  .card button {
+    margin-top: 10px; background: #bc9265; border:none; padding: 8px 15px;
+    border-radius: 15px; color:#fff; cursor:pointer;
+  }
+  .happy-hours {
+    display: flex; justify-content: space-around; align-items: center; max-width: 900px; margin: 40px auto; flex-wrap: wrap;
+  }
+  .happy-text, .price, .happy-img {
+    margin: 10px;
+  }
+  .happy-text button, .price button {
+    background: #3c2f26; color:#fff; border:none; padding: 10px 20px; border-radius: 15px; cursor:pointer;
+  }
+  .happy-img img {
+    border-radius: 50%; width: 100px; height: 100px;
+  }
+  footer {
+    color: #fff; background: #3c2f26; display: flex; justify-content: space-around; flex-wrap: wrap;
+    padding: 20px 10px;
+  }
+  .social-icons span {
+    margin: 0 10px; cursor: pointer;
+  }
+  .testimonials {
+    max-width: 800px; margin: 30px auto; background: #F5E8DC; padding: 20px; border-radius: 15px; color:#3c2f26;
+  }
+  .testimonials img {
+    border-radius: 50%; width: 80px; margin-right: 20px;
+  }
+  .testimonial-content {
+    display: flex; align-items: center;
+  }
+  .testimonial-text {
+    max-width: 600px;
+  }
+  .btn {
+    background: #bc9265; color:#fff; border:none; padding: 8px 15px; border-radius: 15px; cursor:pointer;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="#">Home</a><a href="#">Menu</a><a href="#">Story</a><a href="#">Location</a><a href="#">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Savor the Perfect Brew!</h1>
+  <p>Experience the finest coffee blends crafted to delight your senses.</p>
+  <button>Order Now</button>
+</section>
+
+<section class="why-choose">
+  <h2>Why Choose Us?</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=400&q=80" alt="Espresso" />
+      <h3>Espresso</h3>
+      <p>Rich and bold, a perfect shot to start your day.</p>
+      <button>Buy Now</button>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=400&q=80" alt="Latte" />
+      <h3>Latte</h3>
+      <p>Creamy and smooth, topped with perfect foam art.</p>
+      <button>Read More</button>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=400&q=80" alt="Latte" />
+      <h3>Latte</h3>
+      <p>Our rich-flavored latte served with love.</p>
+      <button>Buy Now</button>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=400&q=80" alt="Cold Brew" />
+      <h3>Cold Brew</h3>
+      <p>Chilled to perfection for a refreshing sip.</p>
+      <button>Get Cold Brew</button>
+    </div>
+  </div>
+</section>
+
+<section class="happy-hours">
+  <div class="happy-text">
+    <h3>Morning Happy Hours</h3>
+    <p>Get your morning dose with exclusive discounts every day.</p>
+    <button>View Offers</button>
+  </div>
+  <div class="happy-img">
+    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=400&q=80" alt="Coffee Heart" />
+  </div>
+  <div class="price">
+    <h3>Visit Us Today</h3>
+    <p><strong>$200</strong> Discount</p>
+    <button>Contact</button>
+  </div>
+</section>
+
+<section class="testimonials">
+  <h2>Customer Testimonials</h2>
+  <div class="testimonial-content">
+    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Customer" />
+    <div class="testimonial-text">
+      <p>"The coffee here is exceptional. Always fresh and delicious!"</p>
+      <strong>Emma Brooks</strong><br/>
+      <button class="btn">See More</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div>© 2024 Coffee Shop</div>
+  <div class="social-icons">
+    <span>🐦</span>
+    <span>📸</span>
+    <span>📍</span>
+  </div>
+</footer>
+
+</body>
+</html>
